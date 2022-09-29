@@ -49,7 +49,17 @@
             <!--글로벌 메뉴 종료-->
 
             <!--로그인 폼 시작-->
-
+            <div class="loginForm">
+                <form action="login.jsp" method="post">
+                    <legend>로그인</legend>
+                    <label for="user_id">아이디</label>
+                    <input type="text" id="user_id" name="user_id">
+                    <label for="user_pw">비밀번호</label>
+                    <input type="password" name="user_pw" id="user_pw">
+                    <input type="submit" value="로그인">
+                    <input type="hidden" name="command" value="memberLogin">
+                </form>
+            </div>
             <!--로그인 폼 종료-->
 
 
@@ -182,7 +192,7 @@
                 <h2>Forest Event</h2>
                 <p>포레스트에서 진행하는 다양한 이벤트를 소개합니다</p>
                 <div class="eventInfo">
-                    <div class="event1">
+                    <div class="event">
                         <img src="images/event-BBQ.jpg" alt="글램핑 BBQ 사전 예약 이미지">
                         <p>그릴 X 포레스트</p>
                         <p>
@@ -190,7 +200,7 @@
                             셀프 BBQ를 즐겨보세요
                         </p>
                     </div>
-                    <div class="event2">
+                    <div class="event">
                         <img src="images/event-진로.jpg" alt="일품 진로 이벤트 이미지">
                         <p>드링크 with 일품진로</p>
                         <p>
@@ -198,7 +208,7 @@
                             나만의 칵테일을 만들며 여름밤을 추억하세요    
                         </p>
                     </div>
-                    <div class="event3">
+                    <div class="event">
                         <img src="images/event-goods.jpg" alt=" 예약 이미지">
                         <p>포레스트 컬렉션</p>
                         <p>
