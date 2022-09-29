@@ -1,0 +1,24 @@
+/*스와이퍼 영역*/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+  }
+  .swiper-slide > .info {
+    display: inline;
+    position: absolute;
+    text-align: left;
+    left: 30px;
+    bottom: 30px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

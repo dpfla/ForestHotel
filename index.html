@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LeeYeRim">
+    <meta name="description" content="Forest Hotel">
+    <meta name="robot" content="all">
+    <title>Forest Hotel</title>
+    <link rel="shortcut" href="images/forest-hotel-logo.ico">
+
+    <!--폰트 링크-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Changa:wght@500&family=Nanum+Gothic&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
+    <!--CSS-->
+
+    <!--JS-->
+
+    <!--스와이퍼-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swipper.js"></script>
+</head>
+<body>
+    <!--건너뛰기 링크-->
+    <a href="#contentsArea" class="skipNav">본문 바로가기</a>
+    <a href="#mainMenu" class="skipNav">메뉴 바로가기</a>
+    <!--건너뛰기 링크 종료-->
+
+    <!--Wrapper 시작-->
+    <div id="wrapper">
+        <!--헤더 영역 시작-->
+        <header>
+            <h1 class="logo">
+                <a href="index.html">
+                    Forest Hotel
+                </a>
+            </h1>
+            
+            <!--글로벌 메뉴 시작-->
+            <ul class="globalMenu">
+                <li class="weather"><span></span><span></span><span></span></li>
+                <li>로그인</li>
+                <li><a href="join.html">회원가입</a></li>
+            </ul>
+            <!--글로벌 메뉴 종료-->
+
+            <!--로그인 폼 시작-->
+
+            <!--로그인 폼 종료-->
+
+
+            <div class="topMenu">
+                <!--메인 메뉴 시작-->
+                <nav role="navigation">
+                    <h2 class="hidden">메인메뉴</h2>
+                    <ul class="mainMenu" id="mainMenu">
+                        <li>
+                            <a href="roomInfo.html">객실</a>
+                            <ul class="roomInfoMenu">
+                                <li><a href="roomInfo.html">디럭스</a></li>
+                                <li><a href="roomInfo.html">패밀리</a></li>
+                                <li><a href="roomInfo.html">스위트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="facilityInfo.html">부대시설</a>
+                            <ul class="facilityInfoMenu">
+                                <li><a href="facilityInfo.html">야외풀</a></li>
+                                <li><a href="facilityInfo.html">사우나</a></li>
+                                <li><a href="facilityInfo.html">스파</a></li>
+                                <li><a href="facilityInfo.html">피트니스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="event.html">이벤트</a>
+                            <ul class="eventMenu">
+                                <li><a href="event.html">패키지</a></li>
+                                <li><a href="event.html">프로모션</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!--메인 메뉴 종료-->
+                <div class="reservation">
+                    <a href="#">예약하기</a>
+                </div>
+            </div>
+        </header>
+        <!--헤더 영역 종료-->
+
+        <!--스와이퍼 영역 시작-->
+        <div id="MainSwiperArea">
+            <div class="swiper MainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <h3>패키지 이름</h3>
+                            <p>패키지 설명~ 어쩌구~</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <h3>패키지 이름</h3>
+                            <p>패키지 설명~ 어쩌구~</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <h3>패키지 이름</h3>
+                            <p>패키지 설명~ 어쩌구~</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!--스와이퍼 영역 종료-->
+
+        <!--컨텐츠 영역 시작-->
+        <div id="contentsArea">
+            <!--객실 영역 시작-->
+            <div id="roomArea">
+                <h2>객실</h2>
+                <div id="RoomSwiperArea">
+                    <div class="swiper RoomSwiper">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/room-디럭스.jfif" alt="디럭스 룸 사진">
+                                <div class="roomInfoParah">
+                                    <p>
+                                        모던하면서 아늑한 인테리어와 
+                                        편안한 여유로움을 느낄 수 있는 디럭스 룸
+                                    </p>
+                                    <p>
+                                        편안한 분위기와 세련된 실내 디자인의 디럭스 룸은 
+                                        45평방미터의 공간으로 안락하고 편안한 휴식을 제공합니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/room-프리미어.jfif" alt="프리미어 룸 사진">
+                                <div class="roomInfoParah">
+                                    <p>
+                                        편안한 분위기의 침실과 우아한 감성의 거실이 
+                                        분리되어 독립적 공간 활용이 매력적인 프리미어
+                                    </p>
+                                    <p>
+                                        여유로운 휴식 공간을 원하는 가족단위 고객이 선호하는 객실입니다.
+                                        53평방미터의 객실 공간은 Full HD TV, 캡슐 커피머신, 다양한 어메니티를 갖추고 있으며, 
+                                        무료 와이파이 서비스는 호텔 투숙을 더욱 편안하게 만들어 줄 것입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/room-스위트.jfif" alt="스위트 룸 사진">
+                                <div class="roomInfoParah">
+                                    <p>
+                                        발코니에서 더 가까이 바다를 느낄 수 있고 편안한 침실과 
+                                        안락한 거실이 분리되어 품격 있는 휴식을 누릴 수 있는 스위트 룸
+                                    </p>
+                                    <p> 
+                                        편안한 침실과 안락한 거실이 분리되어 있어 품격 있는 휴식을 누리실 수 있으며 
+                                        간결하게 정돈된 우드 톤으로 본관 특유의 세련되면서도 모던한 감각이 배어 있습니다.
+                                        오션-테라스 스위트는 침실과 거실 모두에 발코니가 구비되어 있어 바다를 보다 가까이서 느낄 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--객실 영역 종료-->
+
+            <!--이벤트 영역 시작-->
+            <div id="EventArea">
+                <h2>Forest Event</h2>
+                <p>포레스트에서 진행하는 다양한 이벤트를 소개합니다</p>
+                <div class="eventInfo">
+                    <div class="event1">
+                        <img src="images/event-BBQ.jpg" alt="글램핑 BBQ 사전 예약 이미지">
+                        <p>그릴 X 포레스트</p>
+                        <p>
+                            포레스트 전경이 펼쳐지는 글램핑 공간에서
+                            셀프 BBQ를 즐겨보세요
+                        </p>
+                    </div>
+                    <div class="event2">
+                        <img src="images/event-진로.jpg" alt="일품 진로 이벤트 이미지">
+                        <p>드링크 with 일품진로</p>
+                        <p>
+                            편안한 휴식으로 채운 한 잔의 일품진로 칵테일
+                            나만의 칵테일을 만들며 여름밤을 추억하세요    
+                        </p>
+                    </div>
+                    <div class="event3">
+                        <img src="images/event-goods.jpg" alt=" 예약 이미지">
+                        <p>포레스트 컬렉션</p>
+                        <p>
+                            포레스트의 감성을 담아 제작한 컬렉션을
+                            웹 회원 특별 프로모션으로 제공합니다
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--이벤트 영역 종료-->
+        </div>
+        <!--컨텐츠 영역 종료-->
+
+        <!--푸터 영역 시작-->
+        <footer>
+            <div id="innerFooter">
+                <div class="footerLeft">
+                    <section class="guide">
+                        <h2 class="hidden">포레스트 바로가기 메뉴</h2>
+                        <ul>
+                            <li>오시는길</li>
+                            <li>사이트맵</li>
+                            <li>개인정보처리방침</li>
+                            <li>이용약관</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </section>
+                    <address>
+                        <p>
+                            (주)포레스트: 인천광역시 중구 영종해안남로, 사업자 등록번호 121-86-18441, 통신판매번호 제 2017-인천중구, 대표이사 : 최종환<br>
+                            Tel. 1833-8855, E-mail : p-city@paradian.com
+                        </p>
+                    </address>
+                </div>
+                <div class="footerRight">
+                    <table class="footerCS">
+                        <tr><td colspan = "2">CUSTOMER CENTER</td></tr>
+                        <tr><td>객실예약</td><td>032-749-2111~3</td></tr>
+                        <tr><td>Tel.</td><td>032-742-2121</td></tr>
+                        <tr><td>E-mail</td><td>WELCOME@FORESTHOTEL.CO.KR</td></tr>
+                    </table>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
