@@ -1,24 +1,68 @@
-/*스와이퍼 영역*/
-.swiper {
+/*메인 스와이퍼 영역*/
+.MainSwiper {
     width: 100%;
     height: 100%;
   }
-  .swiper-slide {
+  .MainSwiper .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     position: relative;
   }
-  .swiper-slide > .info {
+  .MainSwiper .swiper-slide > .info {
     display: inline;
     position: absolute;
     text-align: left;
     left: 30px;
     bottom: 30px;
   }
-  .swiper-slide img {
+  .MainSwiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+
+
+  /*객실 스와이퍼 영역*/
+.RoomSwiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.RoomSwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+}
+.RoomSwiper .swiper-slide > .roomInfoParah {
+  display: inline;
+  position: absolute;
+  text-align: left;
+  left: 30px;
+  bottom: 30px;
+}
+.RoomSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination {
+  position: absolute;
+  top: 0;
+}
+.swiper-pagination-bullet {
+  display: inline;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  color: #007aff;
+}

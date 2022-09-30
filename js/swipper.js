@@ -1,4 +1,5 @@
-var swiper = new Swiper(".MainSwiper", {
+
+  var Mainswiper = new Swiper(".MainSwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -11,28 +12,28 @@ var swiper = new Swiper(".MainSwiper", {
     }
   });
 
-  var roomName = ["deluxe", "family", "suite"];
-  var swiper = new Swiper(".RoomSwiper", {
+  var roomname = ["deluxe", "premiere", "suite"];
+  var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
         return (
-          '<span class="' + className + '">' + roomName[index] + "</span>"
+          '<span class="' + className + '">' + roomname[index] + "</span>"
         );
       }
     }
   });
 
-  var facilityName = ["야외풀", "사우나", "스파", "피트니스"];
-  var swiper = new Swiper(".FacilitySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return (
-          '<span class="' + className + '">' + facilityName[index] + "</span>"
-        );
-      }
-    }
-  });
+var roomname = ["deluxe", "premiere", "suite"];
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' + className + '">' + roomname[index] + "</span>"
+            );
+          }
+        }
+      });
