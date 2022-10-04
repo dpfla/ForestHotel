@@ -1,0 +1,212 @@
+html, body, a, div, h1, ul, li, form, legend, label, input, nav, h2, header
+, img, h3, p, footer, section, table, tr, td{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+/*링크 스타일*/
+a:link, a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+/*기본 설정*/
+html{
+    font-size: 14px;
+}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #000;
+    background-color: #fff;
+    line-height: 1.4;
+}
+.hidden{
+    display: none;
+}
+
+
+/*건너뛰기 링크*/
+.skipNav{
+    position: absolute;
+    left: -9999px;
+}
+.skipNav:focus{
+    left: 50%;
+    margin: 3px 0 0 -3rem;
+    padding: 5px 15px;
+    background-color: #000;
+    color: #fff;
+    outline: 0;
+    z-index: 10;
+    text-decoration: none;
+}
+
+/*전체 레이아웃*/
+#contentsArea,footer{
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+#wrapper {
+    background-color: #fff;
+}
+
+/*헤더 영역*/
+header{
+    height: 100px;
+    width: 100%;
+    min-width: 960px;
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+header .globalMenu{
+    height: 40px;
+    background-color: #222;
+    color: #fff;
+    position: relative;
+}
+.globalMenuinner {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+.globalMenuinner li {
+    float: left;
+    height: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.globalMenuinner li a{
+    color: #fff;
+}
+.globalMenuinner li:not(.weather){
+    width: 140px;
+    border-left: 1px solid #666;
+    position: relative;
+    padding: 11px 0;
+}
+.globalMenuinner .weather span{
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-right: 20px;
+    padding: 12px 0;
+}
+
+
+.logoMenu{
+    height: 60px;
+}
+.logo{
+    float: left;
+    margin: 0.25rem 0;
+}
+.logo a{
+    display: inline-block;
+    margin: 0 0.7rem;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-weight: 500;
+    font-size: 2.7rem; 
+}
+.topMenu{
+    height: 100%;
+}
+nav{
+    float: left;
+    height: 100%;
+}
+.mainMenu {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+}
+.mainMenu > li{
+    display: inline-block;
+    position: relative;
+}
+.mainMenu > li > a{
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+}
+.mainMenu > li:first-child {
+    margin-left: 3rem;
+}
+.mainMenu > li > a::after {
+    content: "";
+    
+    padding-left: 3rem;
+    border-right: 1px solid #666;
+}
+.mainMenu > li:last-child > a::after{
+    content: "";
+    border: none;
+}
+.mainMenu > li:hover .underMenu { 
+    display: block;
+    z-index: 9999;
+}
+.underMenu {
+    display: none;
+    position: absolute;
+    left: 1.35rem;
+    white-space: nowrap;
+}
+.underMenu > li {
+    display: inline-block;
+    padding: 1rem 0.4rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+.reservation{
+    float: right;
+    height: 100%;
+    width: 280px;
+    box-sizing: border-box;
+    background-color: rgb(29, 90, 32);
+    text-align: center;
+    
+}
+.reservation > a {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 1.35rem 0;
+}
+.reservation::after {
+    float: none;
+}
+
+
+
+/*로그인폼*/
+.loginForm{
+    display: none;
+    z-index: 9999;
+    position: relative;
+    width: 470px;
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid #666;
+    margin: 0 auto;
+    top: 50%;
+    
+}
+
+
