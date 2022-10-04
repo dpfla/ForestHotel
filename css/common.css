@@ -51,7 +51,7 @@ body {
 }
 
 /*전체 레이아웃*/
-#contentsArea,footer{
+#contentsArea,#innerFooter{
     width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -135,24 +135,30 @@ nav{
 }
 .mainMenu {
     font-size: 1.1rem;
-    margin-top: 1.2rem;
+    /*margin-top: 1.2rem;
+    margin-bottom: 0.7rem;*/
+    height: 100%;
 }
 .mainMenu > li{
     display: inline-block;
     position: relative;
+    height: 100%;
+    box-sizing: border-box;
 }
 .mainMenu > li > a{
     display: inline-block;
+    height: 74%;
+    margin-top: 1.2rem;
     padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
 }
 .mainMenu > li:first-child {
     margin-left: 3rem;
 }
 .mainMenu > li > a::after {
     content: "";
-    
     padding-left: 3rem;
-    border-right: 1px solid #666;
+    border-right: 1px solid #ccc;
 }
 .mainMenu > li:last-child > a::after{
     content: "";
@@ -164,13 +170,15 @@ nav{
 }
 .underMenu {
     display: none;
+    padding: 0 1rem;
     position: absolute;
     left: 1.35rem;
     white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .underMenu > li {
     display: inline-block;
-    padding: 1rem 0.4rem;
+    padding: 0.5rem 0.4rem;
     margin-right: 1rem;
     font-size: 1rem;
 }
@@ -199,14 +207,86 @@ nav{
 .loginForm{
     display: none;
     z-index: 9999;
-    position: relative;
-    width: 470px;
-    height: 500px;
-    background-color: #fff;
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background-color: rgb(29, 90, 32);
     border: 1px solid #666;
-    margin: 0 auto;
-    top: 50%;
-    
+    right: 140px;
+    top: 40px;
+}
+.loginForm form {
+    margin: 0 3.5rem;
+    color: #fff;
+}
+.loginForm form legend{
+    font-size: 2.6rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.loginForm form label,input{
+    display: inline-block;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0.3rem;
+}
+.loginForm form label{
+    margin-top: 1rem;
+}
+.loginForm form input{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.loginForm form input[type="submit"]{
+    font-size: 1.2rem;
+    color: #fff;
+    width: 70%;
+    padding: 1rem 0;
+    margin: 2rem 15%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
 }
 
+/*푸터*/
+footer{
+    background-color: #222;
+    height: 250px;
 
+}
+#innerFooter{
+    background-color: #222;
+    color: #aaa;
+    padding-top: 4rem;
+}
+.footerLeft{
+    float: left;
+    width: 70%;
+    margin-right: 3%;
+}
+.guide > ul > li{
+    display: inline-block;
+    padding: 0.3rem 0;
+    margin-left: 1.5rem;
+}
+.guide > ul > li:first-child {
+    margin-left: 0;
+}
+.guide > ul > li::after {
+    content: "";
+    border-right: 1px solid #666;
+    margin-left: 1.5rem;
+}
+.footerLeft > address{
+    font-style: normal;
+    margin-top: 1.5rem;
+    line-height: 2;
+}
+.footerRight .footerCS td {
+    padding: 0.3rem 0.5rem;
+}
+.footerRight .footerCS tr td:first-child {
+    font-weight: 600;
+    color: #ccc;
+}

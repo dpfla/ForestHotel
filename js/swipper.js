@@ -13,7 +13,7 @@
   });
 
   var roomname = ["deluxe", "premiere", "suite"];
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".RoomSwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
