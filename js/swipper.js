@@ -12,7 +12,7 @@
     }
   });
 
-  var roomname = ["deluxe", "premiere", "suite"];
+  var roomname = ["디럭스", "프리미어", "스위트"];
   var swiper = new Swiper(".RoomSwiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -25,15 +25,3 @@
     }
   });
 
-var roomname = ["deluxe", "premiere", "suite"];
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return (
-              '<span class="' + className + '">' + roomname[index] + "</span>"
-            );
-          }
-        }
-      });

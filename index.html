@@ -13,7 +13,7 @@
     <!--폰트 링크-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Nanum+Gothic&amily=Noto+Sans+KR:wght@400;500&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+KR&family=Noto+Sans+KR:wght@400;500&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
     <!--JS-->
 
     <!--스와이퍼-->
@@ -165,8 +165,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="images/room-프리미어.jfif" alt="프리미어 룸 사진">
+                            <div class="swiper-slide">  
                                 <div class="roomInfoParah">
                                     <p>
                                         편안한 분위기의 침실과 우아한 감성의 거실이 
@@ -178,9 +177,14 @@
                                         무료 와이파이 서비스는 호텔 투숙을 더욱 편안하게 만들어 줄 것입니다.
                                     </p>
                                 </div>
+                                <div class="roomImage">
+                                    <img src="images/room-프리미어.jfif" alt="프리미어 룸 사진">
+                                </div>  
                             </div>
                             <div class="swiper-slide">
-                                <img src="images/room-스위트.jfif" alt="스위트 룸 사진">
+                                <div class="roomImage">
+                                    <img src="images/room-스위트.jfif" alt="스위트 룸 사진">
+                                </div>
                                 <div class="roomInfoParah">
                                     <p>
                                         발코니에서 더 가까이 바다를 느낄 수 있고 편안한 침실과 
@@ -200,12 +204,14 @@
             <!--객실 영역 종료-->
 
             <!--이벤트 영역 시작-->
-            <div id="EventArea">
-                <h2>Forest Event</h2>
+            <div id="eventArea">
+                <h2>이벤트</h2>
                 <p>포레스트에서 진행하는 다양한 이벤트를 소개합니다</p>
                 <div class="eventInfo">
                     <div class="event">
-                        <img src="images/event-BBQ.jpg" alt="글램핑 BBQ 사전 예약 이미지">
+                        <div class="eventImg">
+                            <img src="images/event-BBQ.jpg" alt="글램핑 BBQ 사전 예약 이미지">
+                        </div>
                         <p>그릴 X 포레스트</p>
                         <p>
                             포레스트 전경이 펼쳐지는 글램핑 공간에서
@@ -213,7 +219,9 @@
                         </p>
                     </div>
                     <div class="event">
-                        <img src="images/event-진로.jpg" alt="일품 진로 이벤트 이미지">
+                        <div class="eventImg">
+                            <img src="images/event-진로.jpg" alt="일품 진로 이벤트 이미지">
+                        </div>
                         <p>드링크 with 일품진로</p>
                         <p>
                             편안한 휴식으로 채운 한 잔의 일품진로 칵테일
@@ -221,7 +229,9 @@
                         </p>
                     </div>
                     <div class="event">
-                        <img src="images/event-goods.jpg" alt=" 예약 이미지">
+                        <div class="eventImg">
+                            <img src="images/event-goods.jpg" alt=" 예약 이미지">
+                        </div>
                         <p>포레스트 컬렉션</p>
                         <p>
                             포레스트의 감성을 담아 제작한 컬렉션을
