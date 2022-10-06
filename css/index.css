@@ -46,7 +46,13 @@
 /*객실 스와이퍼 영역*/
 #roomArea{
   height: 650px;
+  margin-top: 80px;
+}
+#roomArea h2 {
   text-align: center;
+  font-size: 2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
 }
 .roomSwiperArea{
   margin: 1.8rem 3.5rem;
@@ -56,11 +62,30 @@
   height: 100%;
   position: relative;
 }
-
 .RoomSwiper .swiper-slide {
-  text-align: center;
   font-size: 18px;
   background: #fff;
+}
+.RoomSwiper .swiper-slide .roomImage{
+  display: inline-block;
+  width: 55%;
+  overflow: hidden;
+  margin-right: 4%;
+}
+.RoomSwiper .swiper-slide .roomImage img {
+  position: relative;
+  left: -30%;
+}
+.RoomSwiper .swiper-slide .roomInfoParah{
+  display: inline-block;
+  width: 40%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.RoomSwiper .swiper-slide .roomInfoParah p:first-child{
+  color: #9c836a;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .RoomSwiper .swiper-slide .roomSwiper-img {
