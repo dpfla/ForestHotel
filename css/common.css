@@ -76,7 +76,7 @@ header{
 }
 header .globalMenu{
     height: 40px;
-    background-color: #222;
+    background-color: #000;
     color: #fff;
     position: relative;
 }
@@ -251,12 +251,12 @@ nav{
 
 /*푸터*/
 footer{
-    background-color: #222;
+    background-color: #000;
     height: 250px;
 
 }
 #innerFooter{
-    background-color: #222;
+    background-color: #000;
     color: #aaa;
     padding-top: 4rem;
 }

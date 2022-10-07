@@ -25,3 +25,15 @@
     }
   });
 
+  var roomname = ["야외풀", "사우나", "스파", "피트니스"];
+  var swiper = new Swiper(".facilitySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return (
+          '<span class="' + className + '">' + roomname[index] + "</span>"
+        );
+      }
+    }
+  });
