@@ -65,4 +65,5 @@
     color: rgb(156, 131, 106);
     padding: 0.7rem 1.7rem;
     border: 1px solid rgba(156, 131, 106, 0.5);
+    cursor: pointer;
 }
