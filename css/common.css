@@ -29,7 +29,7 @@ body {
     background-color: #fff;
     line-height: 1.4;
 }
-.hidden{
+.hidden, legend{
     display: none;
 }
 
@@ -67,14 +67,13 @@ header{
     width: 100%;
     min-width: 960px;
     background-color: #fff;
-    border-bottom: 1px solid #aaa;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
     z-index: 999;
 }
 header .globalMenu{
+    min-width: 1200px;
     height: 40px;
     background-color: #000;
     color: #fff;
@@ -113,7 +112,10 @@ header .globalMenu{
 
 
 .logoMenu{
+    min-width: 1200px;
     height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
 }
 .logo{
     float: left;
@@ -135,8 +137,6 @@ nav{
 }
 .mainMenu {
     font-size: 1.1rem;
-    /*margin-top: 1.2rem;
-    margin-bottom: 0.7rem;*/
     height: 100%;
 }
 .mainMenu > li{
@@ -145,9 +145,12 @@ nav{
     height: 100%;
     box-sizing: border-box;
 }
+.mainMenu > li:hover > a{
+    color: rgba(0, 72, 4, 0.6);
+}
 .mainMenu > li > a{
     display: inline-block;
-    height: 74%;
+    height: 44.4px;
     margin-top: 1.2rem;
     padding: 0.5rem 1.5rem;
     box-sizing: border-box;
@@ -164,15 +167,10 @@ nav{
     content: "";
     border: none;
 }
-.mainMenu > li:hover .underMenu { 
-    display: block;
-    z-index: 9999;
-}
 .underMenu {
     display: none;
     padding: 0 1rem;
     position: absolute;
-    left: 1.35rem;
     white-space: nowrap;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -182,9 +180,12 @@ nav{
     margin-right: 1rem;
     font-size: 1rem;
 }
+.underMenu > li > {
+    color: #999;
+}
 .reservation{
     float: right;
-    height: 100%;
+    height: 60px;
     width: 280px;
     box-sizing: border-box;
     background-color: rgb(29, 90, 32);
@@ -208,18 +209,20 @@ nav{
     display: none;
     z-index: 9999;
     position: absolute;
-    width: 380px;
-    height: 380px;
+    width: 420px;
+    height: 420px;
     background-color: rgb(29, 90, 32);
     border: 1px solid #666;
-    right: 140px;
-    top: 40px;
+    right: 0;
+    top:40px;
 }
 .loginForm form {
-    margin: 0 3.5rem;
+    width: 322px;
+    margin: 0 auto;
     color: #fff;
 }
 .loginForm form legend{
+    display: block;
     font-size: 2.6rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -244,7 +247,7 @@ nav{
     color: #fff;
     width: 70%;
     padding: 1rem 0;
-    margin: 2rem 15%;
+    margin: 3rem 15% 0;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 40px;
 }

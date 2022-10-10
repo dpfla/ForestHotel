@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Nanum+Gothic&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
 
     <!--JS-->
-
+    <script src="js/common.js"></script>
     <!--스와이퍼-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet"
@@ -26,7 +26,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/event.css">
     
 </head>
 <body>
@@ -42,8 +42,8 @@
             <!--글로벌 메뉴 시작-->
             <div class="globalMenu">
                 <ul class="globalMenuinner">
-                    <li class="weather"><span>서울</span><span>02:30PM</span><span>흐리고비 21c</span></li>
-                    <li>로그인</li>
+                    <li class="weather"><span></span><span></span><span></span></li>
+                    <li class="clickLogin">로그인</li>
                     <li><a href="join.html">회원가입</a></li>
                 </ul>
             </div>
@@ -115,23 +115,29 @@
             <h2>이벤트</h2>
             <div class="event-flexBox">
                 <div class="event">
-                    <img src="images/event-BBQ.jpg" alt="글램핑 BBQ 사전 예약 이미지">
+                    <div class="event-img">
+                        <img src="images/event-BBQ.jpg" alt="글램핑 BBQ 사전 예약 이미지">
+                    </div>
                     <p>
-                        <span class="event-title">그릴 X 포레스트</span>
+                        <span class="event-title">그릴 X 포레스트</span><br>
                         <span class="event-term">이용기간: 2022-9-30 ~ 2022-11-30</span>
                     </p>
                 </div>
                 <div class="event">
-                    <img src="images/event-진로.jpg" alt="일품 진로 이벤트 이미지">
+                    <div class="event-img">
+                        <img src="images/event-진로.jpg" alt="일품 진로 이벤트 이미지">
+                    </div>
                     <p>
-                        <span class="event-title">스테이 앤 드링크 with 일품진로</span>
+                        <span class="event-title">스테이 앤 드링크 with 일품진로</span><br>
                         <span class="event-term">이용기간: 2022-8-31 ~ 2022-10-31</span>
                     </p>
                 </div>
                 <div class="event">
-                    <img src="images/event-goods.jpg" alt=" 예약 이미지">
+                    <div class="event-img">
+                        <img src="images/event-goods.jpg" alt=" 예약 이미지">
+                    </div>
                     <p>
-                        <span class="event-title">포레스트 컬렉션</span>
+                        <span class="event-title">포레스트 컬렉션</span><br>
                         <span class="event-term">이용기간: 2022-9-30 ~ 종료시까지</span>
                     </p>
                 </div>
