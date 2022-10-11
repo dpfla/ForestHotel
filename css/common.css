@@ -65,7 +65,7 @@ body {
 header{
     height: 100px;
     width: 100%;
-    min-width: 960px;
+    min-width: 1200px;
     background-color: #fff;
     position: fixed;
     top: 0;
