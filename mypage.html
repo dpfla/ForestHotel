@@ -13,21 +13,15 @@
     <!--폰트 링크-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+KR&family=Noto+Sans+KR:wght@400;500&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Nanum+Gothic&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
 
     <!--JS-->
     <script src="js/api-key.js"></script>
     <script src="js/common.js"></script>
-    <!--스와이퍼-->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script defer src="js/swipper.js"></script>
-
+ 
     <!--CSS-->
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/roomInfo.css">
+    <link rel="stylesheet" href="css/mypage.css">
     
 </head>
 <body>
@@ -109,66 +103,56 @@
             </div>
             <!--로그인 폼 종료-->
         </header>
-        <!--헤더 영역 종료-->
+        <!--헤더 종료-->
 
         <!--컨텐츠 영역 시작-->
         <div id="contentsArea">
-            <!--객실 영역 시작-->
-            <h2 class="title">객실</h2>
-            <div class="roomInfo">
-                <h3 class="roomName">디럭스</h3>
-                <p>모던하면서 아늑한 인테리어가 돋보이는 객실</p>
-                <div class="roomInfo-all">
-                    <div class="roomInfo-img">
-                        <img src="images/room-디럭스.jfif" alt="디럭스 객실 사진">
+            <h2>마이 페이지</h2>
+            <h3>회원정보</h3>
+            <form action="" method="post" id="myInfoForm" name="myInfoForm">
+                <fieldset>
+                    <div class="inputIdArea">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId" id="userId" value="id" disabled>
                     </div>
-                    <div class="roomInfo-parah">
-                        <h3>디럭스 포레스트</h3>
-                        <table>
-                            <tr><td>인원</td><td>2명</td></tr>
-                            <tr><td>침대</td><td>더블, 트윈</td></tr>
-                            <tr><td>건물</td><td>본관, 신관</td></tr>
-                        </table>
-                        <p>상세보기</p>
+                    <div class="inputPwArea">
+                        <label for="userPw">비밀번호</label>
+                        <input type="password" name="userPw" id="userPw" placeholder="영문, 숫자, 특수문자(@, !, *, #, ?, _) 8자~12자">
                     </div>
-                </div>
-            </div>
-            <div class="roomInfo">
-                <h3 class="roomName">패밀리</h3>
-                <p>편안한 분위기의 침실과 우아한 감성의 거실</p>
-                <div class="roomInfo-all">
-                    <div class="roomInfo-img">
-                        <img src="images/room-프리미어.jfif" alt="프리미어 객실 사진">
+                    <div class="inputPwCheckArea">
+                        <label for="userPwCheck">비밀번호 확인</label>
+                        <input type="password" name="userPwCheck" id="userPwCheck">
+                        <p class="pwEqualCheck"></p>
                     </div>
-                    <div class="roomInfo-parah">
-                        <h3>프리미어 포레스트</h3>
-                        <table>
-                            <tr><td>인원</td><td>2명</td></tr>
-                            <tr><td>침대</td><td>더블, 트윈</td></tr>
-                            <tr><td>건물</td><td>본관, 신관</td></tr>
-                        </table>
-                        <p>상세보기</p>
+                    <div class="inputNameArea">
+                        <label for="userName">이름</label>
+                        <input type="text" name="userName" id="userName" value="이예림" disabled>
                     </div>
-                </div>
-            </div>
-            <div class="roomInfo">
-                <h3 class="roomName">스위트</h3>
-                <p>편안한 침실과 안락한 거실이 분리되어 있는 객실</p>
-                <div class="roomInfo-all">
-                    <div class="roomInfo-img">
-                        <img src="images/room-스위트.jfif" alt="스위트 객실 사진">
+                    <div class="inputBirthArea">
+                        <label for="userBirth">생년월일</label>
+                        <input type="text" name="userBirthY" id="userBirthY" value="1998" disabled>
+                        <input type="text" name="userBirthM" id="userBirthM" value="05" disabled>
+                        <input type="text" name="userBirthD" id="userBirthD" value="23" disabled>
                     </div>
-                    <div class="roomInfo-parah">
-                        <h3>럭셔리 포레스트</h3>
-                        <table>
-                            <tr><td>인원</td><td>4명</td></tr>
-                            <tr><td>침대</td><td>더블1 & 트윈2</td></tr>
-                            <tr><td>건물</td><td>본관, 신관</td></tr>
-                        </table>
-                        <p>상세보기</p>
+                    <div class="inputTelArea">
+                        <label for="userTel">전화번호</label>
+                        <input type="tel" name="userTel" id="userTel" value="010-8293-1095">
                     </div>
-                </div>
-            </div>
+                    <div class="inputEmailArea">
+                        <label for="userEmailId">이메일</label>
+                        <input type="text" name="userEmailId" id="userEmailId" value="example@forest.com">
+                    </div>
+                    <div class="inputReceiveArea">
+                        <label for="userInforeceiveEmail" id="userInforeceive">정보 수신 여부</label>
+                        <input type="checkbox" name="userInforeceiveEmail" id="userInforeceiveEmail" checked><label for="userInforeceiveEmail">이메일</label>
+                        <input type="checkbox" name="userInforeceiveSMS" id="userInforeceiveSMS" checked><label for="userInforeceiveSMS">SMS</label>
+                    </div>
+                    <div class="btnArea">
+                        <input type="button" class="btnSave" value="저장하기">
+                        <a href="index.html">회원탈퇴</a>
+                    </div>
+                </fieldset>
+            </form>
         </div>
         <!--컨텐츠 영역 종료-->
 

@@ -16,7 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Nanum+Gothic&family=Reem+Kufi+Fun:wght@500&display=swap" rel="stylesheet">
 
     <!--JS-->
+    <script src="js/api-key.js"></script>
+    <script src="js/join.js"></script>
     <script src="js/common.js"></script>
+    
     <!--스와이퍼-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet"
@@ -81,8 +84,8 @@
                             <li>
                                 <a href="event.html">이벤트</a>
                                 <ul class="eventMenu underMenu">
-                                    <li><a href="event.html">패키지</a></li>
-                                    <li><a href="event.html">프로모션</a></li>
+                                    <li><a href="event.html">이벤트</a></li>
+                                    <li><a href="notice.html">공지사항</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -108,7 +111,7 @@
             </div>
             <!--로그인 폼 종료-->
         </header>
-        <!--헤더 영역 종료-->
+        <!--헤더 종료-->
 
         <!--컨텐츠 영역 시작-->
         <div id="contentsArea">
@@ -129,19 +132,19 @@
                         </div>
                         <div class="inputPwCheckArea">
                             <label for="userPwCheck">비밀번호 확인</label><br>
-                            <input type="password" name="userPwCheck" id="userPwCheck" required>
+                            <input type="password" name="userPwCheck" id="userPwCheck">
                             <p class="pwEqualCheck"></p>
                         </div>
                     </div>
                     <div class="inputNameArea">
                         <label for="userName">이름</label><br>
-                        <input type="text" name="userName" id="userName" required>
+                        <input type="text" name="userName" id="userName">
                     </div>
                     <div class="inputBirthArea">
                         <label for="userBirth">생년월일</label><br>
-                        <input type="text" name="userBirthY" id="userBirthY" required placeholder="1990">
-                        <input type="text" name="userBirthM" id="userBirthM" required placeholder="01">
-                        <input type="text" name="userBirthD" id="userBirthD" required placeholder="01">
+                        <input type="text" name="userBirthY" id="userBirthY" placeholder="1990">
+                        <input type="text" name="userBirthM" id="userBirthM" placeholder="01">
+                        <input type="text" name="userBirthD" id="userBirthD" placeholder="01">
                         <p></p>
                     </div>
                     <div class="inputTelArea">

@@ -8,7 +8,7 @@ window.onload = function(){
     function onGeoOk(position) {
         const lat = position.coords.latitude;
         const lon = position.coords.longitude;
-        const API_KEY= "d0405971d9914050c209d215c4e20944";
+        const API_KEY = config.API_KEY;
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
         fetch(url).then((response) => response.json())
             .then((data) => {
@@ -32,7 +32,7 @@ window.onload = function(){
     /* 하위메뉴 */
     const mainMenu = document.querySelectorAll("#mainMenu > li");
     const menu = document.querySelector(".logoMenu");
-    console.log(menu)
+
     mainMenu.forEach((mainmenu) => {
         mainmenu.addEventListener("mouseover", function () {
             menu.style.height = "95px";
